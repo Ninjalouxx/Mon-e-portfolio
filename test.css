@@ -379,3 +379,13 @@ button[type="submit"]:hover {
     margin-left: 10px; /* Ajoute une marge à gauche du texte */
 }
 
+.contact-info-right a[href$=".pdf"] {
+    color: #007bff; /* Couleur du lien */
+    text-decoration: none; /* Supprimer le soulignement du lien */
+    font-weight: bold; /* Mettre en gras */
+    margin-left: 10px; /* Ajouter une marge à gauche */
+}
+
+.contact-info-right a[href$=".pdf"]:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+}
