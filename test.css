@@ -3,12 +3,31 @@
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
-    background-color: #000000;
+    background-color: #ebe3da;
+}
+
+
+
+/* Mise en forme de la section "A propos de moi" */
+#about img {
+    margin-top: 20px; /* Ajuster la marge vers le bas */
+    max-width: 300px; /* Ajuster la largeur maximale */
+    width: 100%; /* Ajuster la largeur pour remplir la colonne */
+    height: auto; /* Permettre le redimensionnement proportionnel */
+}
+
+/* Styles pour les compétences */
+.skill-image img,
+.project-image img,
+.interest-image img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Welcome screen styling */
 .welcome-screen {
-    height: 100vh;
+    width: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,7 +53,6 @@ body {
     font-size: 2rem;
 }
 
-/* Menu styling */
 /* Menu styling */
 .menu {
     position: fixed;
