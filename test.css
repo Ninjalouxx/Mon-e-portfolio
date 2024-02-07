@@ -1,6 +1,7 @@
 /* Pour les images de fond */
 .welcome-screen {
     background-image: url('images/fond_ecran.jpeg');
+    background-repeat: no-repeat;
 }
 
 /* Pour les images dans les sections */
