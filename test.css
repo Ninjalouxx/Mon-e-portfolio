@@ -1,4 +1,6 @@
-
+div {
+    background-image: url('fond_ecran.jpeg');
+}
 /* Body styling */
 body {
     font-family: Arial, sans-serif;
