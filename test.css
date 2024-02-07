@@ -2,21 +2,21 @@ div {
     background-image: url('fond_ecran.jpeg');
     background-image: url('Analyse (2).png');
     background-image: url('bilan_car.png');
-	background-image: url('cv.png');
-	background-image: url('echecs.mp4');
-	background-image: url('linkedin.png');
-	background-image: url('mail.png');
-	background-image: url('med.jpg');
-	background-image: url('Orga.png');
-	background-image: url('photo_moi.jpeg');
-	background-image: url('RGPD.png');
-	background-image: url('RPS.png');
-	background-image: url('SA.png');
-	background-image: url('sport.png');
-	background-image: url('sql.jpg');
-	background-image: url('tel.png');
-	background-image: url('TEB.png');
-	background-image: url('voyage_piano.png');
+    background-image: url('cv.png');
+    background-image: url('echecs.mp4');
+    background-image: url('linkedin.png');
+    background-image: url('mail.png');
+    background-image: url('med.jpg');
+    background-image: url('Orga.png');
+    background-image: url('photo_moi.jpeg');
+    background-image: url('RGPD.png');
+    background-image: url('RPS.png');
+    background-image: url('SA.png');
+    background-image: url('sport.png');
+    background-image: url('sql.jpg');
+    background-image: url('tel.png');
+    background-image: url('TEB.png');
+    background-image: url('voyage_piano.png');
 }
 /* Body styling */
 body {
