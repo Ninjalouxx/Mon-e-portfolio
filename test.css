@@ -1,33 +1,4 @@
-/* Pour les images de fond */
-.welcome-screen {
-    background-image: url('images/fond_ecran.jpeg');
-    background-repeat: no-repeat;
-}
 
-/* Pour les images dans les sections */
-.section img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Pour les images circulaires */
-.img-fluid.rounded-circle {
-    max-width: 300px;
-    margin-top: 20px;
-}
-
-/* Pour les vidéos */
-.interest-video video {
-    width: 100%;
-}
-
-/* Pour les autres images */
-.skill-image img,
-.project-image img,
-.interest-image img {
-    max-width: 100%;
-    height: auto;
-}
 
 /* Body styling */
 body {
