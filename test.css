@@ -14,6 +14,7 @@ body {
     max-width: 300px; /* Ajuster la largeur maximale */
     width: 100%; /* Ajuster la largeur pour remplir la colonne */
     height: auto; /* Permettre le redimensionnement proportionnel */
+    background-color: #ebe3da;
 }
 
 /* Styles pour les compétences */
