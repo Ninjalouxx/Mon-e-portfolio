@@ -1,34 +1,11 @@
-
-
-/* Body styling */
 body {
     font-family: Arial, sans-serif;
     background-color: #ebe3da;
 }
 
-
-
-/* Mise en forme de la section "A propos de moi" */
-#about img {
-    margin-top: 20px; /* Ajuster la marge vers le bas */
-    max-width: 300px; /* Ajuster la largeur maximale */
-    width: 100%; /* Ajuster la largeur pour remplir la colonne */
-    height: auto; /* Permettre le redimensionnement proportionnel */
-    background-color: #ebe3da;
-}
-
-/* Styles pour les compétences */
-.skill-image img,
-.project-image img,
-.interest-image img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* Welcome screen styling */
+/* Css de la page d'acceuil */
 .welcome-screen {
-    width: 100%;
-    height: auto;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -54,7 +31,6 @@ body {
     font-size: 2rem;
 }
 
-/* Menu styling */
 .menu {
     position: fixed;
     top: 0;
@@ -62,7 +38,7 @@ body {
     width: 100%;
     background-color: #6D454C;
     text-align: center;
-    z-index: 1000; /* Assurez-vous que le menu reste au-dessus du reste du contenu */
+    z-index: 1000;
 }
 
 .menu ul {
@@ -79,8 +55,6 @@ body {
     text-decoration: none;
 }
 
-
-/* Section styling */
 .section {
     padding: 50px 20px;
 }
@@ -91,7 +65,6 @@ body {
 	color: #6D454C;
 }
 
-/* Section A propos de moi styling */
 #about {
     margin-top: 150px;
 }
@@ -116,21 +89,20 @@ body {
     margin-top: 50px;
 }
 
-/* Menu boutons styling */
+/* Css pour le menu */
 .menu ul li {
     display: inline;
     margin: 0 0 100 100 px;
-    vertical-align: top; /* Alignement vertical vers le haut */
+    vertical-align: top;
 }
 
-/* Centrage des titres de section */
 .section h1 {
     font-size: 2rem;
     margin-bottom: 20px;
-    text-align: center; /* Ajout de cette propriété pour centrer le texte */
+    text-align: center;
 }
 
-/* Mise en forme de la section "A propos de moi" */
+/* Css pour la section à propos de moii */
 #about {
     text-align: center;
     padding: 50px 0;
@@ -147,13 +119,13 @@ body {
 }
 
 #about img {
-    margin-top: 20px; /* Ajuster la marge vers le bas */
-    max-width: 300px; /* Ajuster la largeur maximale */
-    width: 100%; /* Ajuster la largeur pour remplir la colonne */
-    height: auto; /* Permettre le redimensionnement proportionnel */
+    margin-top: 20px;
+    max-width: 300px;
+    width: 100%;
+    height: auto;
 }
 
-/*Parcours*/
+/* Css pour mon parcours */
 .timeline {
     position: relative;
     margin-top: 30px;
@@ -190,12 +162,12 @@ body {
 
 .timeline-description {
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    flex-basis: 300px; /* Largeur des descriptions */
+    flex-basis: 300px;
 }
 
-/* Styles pour les compétences */
+/* Css pour les compétences */
 .skills-container {
     display: flex;
     flex-wrap: wrap;
@@ -204,17 +176,17 @@ body {
 }
 
 .skill {
-    width: calc(17.5% - 20px); /* Allonger les blocs à 1/3 de la largeur de l'écran avec un espacement de 20px */
+    width: calc(17.5% - 20px);
     background-color: #b0c2bd;
     border-radius: 8px;
     margin-bottom: 20px;
     display: flex;
-    flex-direction: column; /* Mettre le contenu en colonne */
+    flex-direction: column;
 }
 
 .skill-content {
     padding: 20px;
-    flex-grow: 1; /* Faire en sorte que le contenu occupe tout l'espace disponible en hauteur */
+    flex-grow: 1;
 }
 
 .skill-content p {
@@ -242,24 +214,21 @@ body {
     border-radius: 8px;
     padding: 20px;
     color: black;
-    margin-top: 20px; /* Espacement par rapport au trait */
+    margin-top: 20px;
 }
 
-
-
-
-/* Styles pour les projets personnels */
+/* Css pour les projets personnels */
 .projects-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px; /* Augmenter l'espace entre le titre et les blocs */
+    margin-top: 30px;
 }
 
 .project {
-    width: calc(33.33% - 20px); /* Utiliser 1/3 de la largeur de l'écran avec un espacement de 20px */
+    width: calc(50% - 20px); 
     background-color: #b0c2bd;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 
@@ -280,18 +249,18 @@ body {
     color: black;
 }
 
-/* Styles pour les centres d'intérêts */
+/* Css pour les centres d'intérêts */
 .interests-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-top: 30px; /* Espacement par rapport au titre */
+    margin-top: 30px;
 }
 
 .interest {
-    width: calc(33.33% - 20px); /* Utiliser 1/3 de la largeur de l'écran avec un espacement de 20px */
+    width: calc(33.33% - 20px);
     background-color: #b0c2bd;
-    border-radius: 8px;
+    border-radius: 20px;
     margin-bottom: 20px;
 }
 
@@ -312,19 +281,11 @@ body {
     color: black;
 }
 
-/* Styles pour la section de contact */
-
-
-
-
+/* Css pour la section de contact */
 h2 {
     text-align: center;
     margin-bottom: 30px;
     color: #333;
-}
-
-.form-group {
-    margin-bottom: 20px;
 }
 
 button[type="submit"] {
@@ -337,36 +298,21 @@ button[type="submit"] {
     cursor: pointer;
 }
 
-button[type="submit"]:hover {
-    background-color: #0056b3;
-}
-
-/* Styles pour les informations de contact */
 .contact-info {
     display: flex;
-    align-items: center; /* Centre verticalement les éléments */
-    margin-top: 20px; /* Ajustez selon vos besoins */
+    align-items: center; 
+    margin-top: 20px;
 }
 
 .contact-info-left img {
-    width: 50px; /* Ajustez la taille de l'image selon vos préférences */
+    width: 50px;
     height: auto;
-    margin-right: 10px; /* Ajoute une marge à droite de l'image */
+    margin-right: 10px;
 }
 
 .contact-info-right p {
     font-size: 18px;
-    margin-top: 0; /* Supprime la marge supérieure du paragraphe */
-    margin-left: 10px; /* Ajoute une marge à gauche du texte */
+    margin-top: 20px; 
+    margin-left: 10px; 
 }
 
-.contact-info-right a[href$=".pdf"] {
-    color: #007bff; /* Couleur du lien */
-    text-decoration: none; /* Supprimer le soulignement du lien */
-    font-weight: bold; /* Mettre en gras */
-    margin-left: 10px; /* Ajouter une marge à gauche */
-}
-
-.contact-info-right a[href$=".pdf"]:hover {
-    text-decoration: underline; /* Souligner le lien au survol */
-}
