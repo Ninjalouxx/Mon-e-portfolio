@@ -1,16 +1,16 @@
-O<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-portfolio de Dimitri Deramond</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div class="welcome-screen">
-        <img src="fond_ecran.jpeg" alt="Fond d'écran">
+        <img src="images\fond_ecran.jpeg" alt="Fond d'écran">
         <div class="welcome-text">
             <h1>Bienvenue sur mon site e-portfolio</h1>
             <h3>Dimitri Deramond</h3>
@@ -44,7 +44,7 @@ O<!DOCTYPE html>
 					</p>
 				</div>
 				<div class="col-md-6 order-md-1">
-					<img src="photo_moi.jpeg" alt="Ma photo" class="img-fluid rounded-circle" style="max-width: 300px; margin-top: 20px;">
+					<img src="images\photo_moi.jpeg" alt="Ma photo" class="img-fluid rounded-circle" style="max-width: 300px; margin-top: 20px;">
 				</div>
 			</div>
 		</div>
@@ -86,7 +86,7 @@ O<!DOCTYPE html>
 						<p>Programmation statistique (RStudio, RShiny, Python, SAS)</p>
 					</div>
 					<div class="skill-image">
-						<img src="RPS.png" alt="RPS" style="width: 100%;">
+						<img src="images\RPS.png" alt="RPS" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -95,7 +95,7 @@ O<!DOCTYPE html>
 						<p>Reporting, Visualisation de données (Tableau, Excel,PowerBI)</p>
 					</div>
 					<div class="skill-image">
-						<img src="TEP.png" alt="TEP" style="width: 100%;">
+						<img src="images\TEP.png" alt="TEP" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -104,7 +104,7 @@ O<!DOCTYPE html>
 						<p>Requêtage,Gestion et Structuration et traitement de bases de données (SQL,Access)</p>
 					</div>
 					<div class="skill-image">
-						<img src="SA.png" alt="SA" style="width: 100%;">
+						<img src="images\SA.png" alt="SA" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -113,7 +113,7 @@ O<!DOCTYPE html>
 						<p>Analyse et exploitation statistique de données</p>
 					</div>
 					<div class="skill-image">
-						<img src="Analyse (2).png" alt="Analyse" style="width: 100%;">
+						<img src="images\Analyse (2).png" alt="Analyse" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -122,7 +122,7 @@ O<!DOCTYPE html>
 						<p>Droit des données (RGPD)</p>
 					</div>
 					<div class="skill-image">
-						<img src="RGPD.png" alt="RGPD" style="width: 100%;">
+						<img src="images\RGPD.png" alt="RGPD" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -131,7 +131,7 @@ O<!DOCTYPE html>
 						<p>Organisation et Travail en équipe</p>
 					</div>
 					<div class="skill-image">
-						<img src="Orga.png" alt="Orga" style="width: 100%;">
+						<img src="images\Orga.png" alt="Orga" style="width: 100%;">
 					</div>
 					<div class="arrow-down"></div>
 				</div>
@@ -149,47 +149,148 @@ O<!DOCTYPE html>
 			<h2 style="text-align: center; font-weight: bold; margin-bottom: 100px;">Projets Personnels</h2>
 			<div class="projects-container">
 				<div class="project">
-					<h3>Etude démographique à partir de données médicales.</h3>
+					<h3>Analyse Démographique et Statistique de Données Médicales</h3>
 					<div class="project-image">
-						<img src="med.jpg" alt="Etude démographique" style="width: 100%; height: auto;">
+						<img src="images\med.jpg" alt="Etude démographique" style="width: 100%; height: auto;">
 					</div>
-					<div class="project-description">
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet1')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet1" style="display: none;">
 						<p>De fev 2023 à juin 2023</p>
-						<p>Traitement et analyses statistiques de données cliniques provenant d’une étude réalisée dans 5 hôpitaux aux Etats-Unis, afin d'étudier quelles sont les liens entre les différentes variables sociodémographiques et le décès du patient. </p>
+						<p>Traitement et analyse statistique approfondie de données cliniques issues de cinq hôpitaux américains. Notre objectif était d'examiner les corrélations entre les variables sociodémographiques et les taux de mortalité des patients, avec un accent particulier sur la préparation des données pour une modélisation statistique efficace.
+						Les résultats ont été valorisés par des présentations PowerPoint et des rapports techniques documentés, offrant ainsi des aperçus significatifs sur les facteurs influençant les issues de soins intensifs.</p>
 						<p>- Travail de groupe de 4 personnes.</p>
-						<p>- Création d’une base de donnée propre sur RStudio.</p>
-						<p>- Analyse des données, réalisation de graphiques et modélisation statistique sur RStudio.</p>
-						<p>- Valorisation des résultats à l’oral avec support visuel PowerPoint.</p>
+						<p>- Collecte et analyse statistique de données cliniques de cinq hôpitaux américains.</p>
+						<p>- Exploration des relations, nettoyage et structuration des données pour la modélisation avec RStudio.</p>
+						<p>- Implémentation et interprétation de modèles linéaires multivariés pour des prédictions fiables.</p>
+						<p>- Synthèse et présentation des résultats par un rapports technique et un support PowerPoint à l'oral.</p>
+						<p>---------------------------------------------------------------------------</p>
+						<p>Voici un extrait de slide de notre présentation oral du projet :</p>
+					</div>
+					<div id="detailsProjet1Img" class="project-image" style="display: none;">
+						<img src="images\Preuve_1.jpeg" alt="Preuve_1" style="width: 100%; height: auto;">
 					</div>
 				</div>
+				
 				<div class="project">
-					<h3>Création de reporting à partir d’un SGBD relationnel.</h3>
+					<h3>Projet d'analyse approfondie de la relation âge-performance</h3>
 					<div class="project-image">
-						<img src="sql.jpg" alt="Etude démographique" style="width: 100%;">
+						<img src="images\Img_Dodapp.jpg" alt="Domaine d'Appli" style="width: 100%;">
 					</div>
-					<div class="project-description">
-						<p>Jan 2023</p>
-						<p>Requêtage dans une base de données (SQL) puis analyse descriptive des données et prise de décisions sur Excel, afin de rendre un rendu professionnel.</p>
-						<p>- Travail de groupe de 4 personnes.</p>
-						<p>- Récupération des données par requêtage SQL.</p>
-						<p>- Analyse des données et création de graphique sur Excel.</p>
-						<p>- Rédaction d’un rapport reporting Excel.</p>
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet2')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet2" style="display: none;">
+						<p>De Jan à Avril 2024</p>
+						<p>Le projet consiste à étudier la corrélation entre l'âge et les performances, qu'elles soient physiques ou cognitives, en se basant sur des données réelles et des études scientifiques. Il vise à comprendre l'impact du vieillissement sur diverses capacités et à synthétiser cette relation complexe. L'enjeu principal réside dans la capacité à traiter et analyser des données variées, souvent imparfaites, pour en extraire des informations pertinentes et à les présenter de manière structurée et compréhensible.</p>
+						<p>- Familiarisation avec le jeu de données, puis manipulation et structuration de données hétérogènes pour une analyse statistique.(travaille conséquent de nettoyage de base)</p>
+						<p>- Utilisation de méthodes statistiques pour l'interrogation et l'approximation des données (notamment des régressions linaires, des modèles polynomiaux ainsi que des modèles de Moore).</p>
+						<p>- Interprétation de statistiques pour élaborer des conclusions détaillées.</p>
+						<p>- Rédaction d'un document synthétique regroupant les découvertes clés.</p>
+						<p>---------------------------------------------------------------------------</p>
+						<p>Voici une page de notre rapport écrit du projet :</p>
+					</div>
+					<div id="detailsProjet2Img" class="project-image" style="display: none;">
+						<img src="images\Preuve_2.jpeg" alt="Preuve_2" style="width: 100%;">
 					</div>
 				</div>
+				
 				<div class="project">
-					<h3>Enquête d’évaluation du bilan carbone des membres de l’IUT Rives de Seine.</h3>
+					<h3>Mise en Œuvre de la Modélisation Linéaire dans le Basket: Une Approche Statistique</h3>
 					<div class="project-image">
-						<img src="bilan_car.png" alt="Etude démographique" style="width: 100%;">
+						<img src="images\Basket.png" alt="Etude démographique" style="width: 100%;">
 					</div>
-					<div class="project-description">
-						<p>De nov 2022 à jan 2023</p>
-						<p>Dans le cadre d’évaluer le bilan carbone actuel de notre IUT, notre mission consiste à interroger les membres de l'établissement sur leurs habitudes et les changements qu'ils seraient prêts à faire à court terme et d'ici 2030.</p>
-						<p>- Travail de groupe de 4 personnes.</p>
-						<p> -Rédaction du questionnaire et saisie sur LimeSurvey.</p>
-						<p>- Traitement de la base de données dans Excel, Analyses statistiques.</p>
-						<p>- Présentation orale des résulatats, avec support visuel et datavisualisations.</p>
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet3')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet3" style="display: none;">
+						<p>De Jan à Avril 2024</p>
+						<p>Ce projet implique la construction d'un modèle linéaire multivarié pour étudier des données de basket. Il met en lumière comment diverses variables explicatives quantitatives et qualitatives peuvent influencer une variable quantitative d'intérêt. La capacité de développer un modèle adéquat est essentielle pour l'analyse prédictive ou la création d'un modèle économique et concis. Le projet visait donc à préparer à ces responsabilités en soulignant l'importance de la préparation des données, la sélection du modèle le plus pertinent, et en effectuant une modélisation complète.</p>
+						<p>- Préparer et analyser les données pour la modélisation statistique.</p>
+						<p>- Identifier et sélectionner les modèles linéaires multivariés pertinents.</p>
+						<p>- Comprendre et évaluer la qualité des modèles statistiques.</p>
+						<p>- Traiter des données, appliquer un modèle linéaire multivarié, et interpréter les résultats.</p>
+						<p>- Sélection des variables explicatives via des critères tels que AIC ou BIC.</p>
+						<p>- Effectuer des prévisions en utilisant le modèle le plus adapté.</p>
+						<p>---------------------------------------------------------------------------</p>
+						<p>Voici un extrait de graphique de notre rapport écrit du projet :</p>
+					</div>
+					<div id="detailsProjet3Img" class="project-image" style="display: none;">
+						<img src="images\Preuve_3.jpeg" alt="Preuve_3" style="width: 100%;">
 					</div>
 				</div>
+				
+				<div class="project">
+					<h3>Projection et Analyse des Séries Chronologiques dans le Secteur Énergétique</h3>
+					<div class="project-image">
+						<img src="images\energies.png" alt="IUT" style="width: 100%;">
+					</div>
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet5')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet5" style="display: none;">
+						<p>De Sép à Nov 2023</p>
+						<p>Notre projet a porté sur l'étude des séries temporelles concernant la production d'électricité à partir du charbon en Alaska de 2001 à 2021. À l'aide de RStudio, nous avons décomposé et analysé les données de l'EIA pour identifier les tendances, calculer les coefficients saisonniers et effectuer des prévisions précises pour l'année 2022 en utilisant plusieurs modèles statistiques (tels que des modèles linéaires, polynomiales ou encore arima et de Holt-Winter). Ce projet a mis en évidence la complexité des séries temporelles et les défis liés à la création de modèles prédictifs fiables. En affinant nos méthodes de prévision, nous avons cherché à apporter une contribution significative aux stratégies de planification énergétique.</p>
+						<p>- Analyse des données sur la production d'électricité à partir du charbon en Alaska sur deux décennies.</p>
+						<p>- Transformation des séries multiplicative en additive pour une meilleure analyse et compréhension.</p>
+						<p>- Décomposition des séries pour révéler la saisonnalité et tendances sous-jacentes.</p>
+						<p>- Utilisation de modèles ARIMA et Holt-Winters pour des prévisions à court terme.</p>
+						<p>- Confrontation des prévisions aux valeurs réelles pour évaluer la précision des modèles via l'erreur quadratique moyenne.</p>
+						<p>- Production d'un rapport détaillé avec des analyses graphiques et des commentaires approfondis.</p>
+						<p>---------------------------------------------------------------------------</p>
+						<p>Voici un extrait d'une page de notre rapport écrit du projet :</p>
+					</div>
+					<div id="detailsProjet5Img" class="project-image" style="display: none;">
+						<img src="images\Preuve_5.jpeg" alt="Preuve_5" style="width: 100%;">
+					</div>
+				</div>
+				
+				<div class="project">
+					<h3>Étude Statistique sur la Consommation Écoresponsable au sein de l'IUT</h3>
+					<div class="project-image">
+						<img src="images\iut_2.jpg" alt="IUT" style="width: 100%;">
+					</div>
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet4')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet4" style="display: none;">
+						<p>De Déc 2023 à Jan 2024</p>
+						<p>Notre équipe de 5 s'est plongée dans l'analyse détaillée de l'enquête "Bilan Carbone IUT 2023" que nous avons créer l'année précédente, avec pour but d'explorer et de comprendre les habitudes de consommation matérielle et numérique des membres de l'IUT, afin de pouvoir apporter des propositions pour réduire l'impact carbone des membres de l'IUT. Nous avons évalué et redressé les données pour refléter fidèlement la composition de notre établissement. Notre recherche s'est focalisée sur la perception de l'écoresponsabilité dans la consommation quotidienne, révélant notamment des disparités importantes entre les étudiants et le reste du personnel.</p>
+						<p>- Étude des données de l'enquête sur l'empreinte carbone des membres de l'IUT.</p>
+						<p>- Focus sur une problématique de consommation matérielle et numérique pour notre analyse.</p>
+						<p>- Amélioration et intégration du questionnaire dans le processus d'analyse.</p>
+						<p>- Redressement des données basé sur les statuts et départements de l'IUT pour la représentativité, sur le logiciel SAS.</p>
+						<p>- Mise en évidence de différences de perceptions d'écoresponsabilité parmi étudiants et personnel.</p>
+						<p>- Déduction de stratégies pour promouvoir la consommation durable, spécialement chez les étudiants.</p>
+						<p>---------------------------------------------------------------------------</p>
+						<p>Voici un extrait d'une page de notre rapport écrit du projet :</p>
+					</div>
+					<div id="detailsProjet4Img" class="project-image" style="display: none;">
+						<img src="images\Preuve_4.jpeg" alt="Preuve_4" style="width: 100%;">
+					</div>
+				</div>
+				
+				<div class="project">
+					<h3>Stage de X semaines à X</h3>
+					<div class="project-image">
+						<img src="images\stage.jpg" alt="IUT" style="width: 100%;">
+					</div>
+					<button type="button" class="btn-details" onclick="toggleDetails('detailsProjet6')">En savoir plus sur le projet</button>
+					<div class="project-description" id="detailsProjet6" style="display: none;">
+						<p>De X à X</p>
+						<p>Description du stage + Preuve</p>
+					</div>
+					<div id="detailsProjet6Img" class="project-image" style="display: none;">
+						<img src="images\stage.jpg" alt="Preuve_6" style="width: 100%;">
+					</div>
+				</div>
+				
+				<script>
+				function toggleDetails(projectId) {
+					var description = document.getElementById(projectId);
+					var image = document.getElementById(projectId + 'Img');
+					
+					if (description.style.display === "none") {
+						description.style.display = "block";
+						image.style.display = "block";
+					} else {
+						description.style.display = "none";
+						image.style.display = "none";
+					}
+				}
+				</script>
+				
 			</div>
 		</div>
 	</div>
@@ -203,19 +304,19 @@ O<!DOCTYPE html>
 					<h3>Echecs</h3>
 					<div class="interest-video">
                     <video controls style="width: 100%;">
-                        <source src="echecs.mp4" type="video/mp4">
+                        <source src="images\echecs.mp4" type="video/mp4">
                         Your browser does not support the video tag.
                     </video>
 					</div>
 					<div class="interest-description">
-						<p>Il y a environ 3 ans, je me suis découvert une véritable passion pour le jeu d'échecs. Cette passion m'a même conduit à participer activement à des tournois nationaux homologués FIDE, ainsi qu’à m’inscrire dans un club. Cet intérêt pour les échecs me semble être liée à mes études en Science des Données. Les compétences stratégiques, l'analyse rigoureuse, et la prise de décision rapide que j'ai développées en jouant aux échecs se reflètent dans ma capacité à traiter et analyser efficacement des données.</p>
+						<p>Il y a environ 3 ans, je me suis découvert une véritable passion pour le jeu d'échecs. Cette passion m'a conduit à participer activement à des tournois nationaux et même internationaux homologués FIDE, ainsi qu’à m’inscrire dans un club. Les compétences stratégiques, l'analyse rigoureuse, et la prise de décision rapide que j'ai développées en jouant aux échecs se révèlent être de précieuses aides dans ma capacité à traiter et analyser efficacement des données.</p>
 					</div>
 					<div class="arrow-down"></div>
 				</div>
 				<div class="interest">
 					<h3>Sport</h3>
 					<div class="interest-image">
-						<img src="sport.png" alt="Sport" style="width: 100%;">
+						<img src="images\sport.png" alt="Sport" style="width: 100%;">
 					</div>
 					<div class="interest-description">
 						<p>Le sport occupe également une place importante dans ma vie. Depuis mon enfance, j'ai exploré beaucoup de disciplines sportives en club, tels que l'escrime, le tennis, le handball, le ping-pong, et le badminton. Depuis, j’ai gardé cette passion du sport, afin de garder un esprit sain dans un corps sain.</p>
@@ -225,7 +326,7 @@ O<!DOCTYPE html>
 				<div class="interest">
 					<h3>Voyages et Cultures</h3>
 					<div class="interest-image">
-						<img src="voyage_piano.png" alt="Voyage et Cultures" style="width: 100%;">
+						<img src="images\voyage_piano.png" alt="Voyage et Cultures" style="width: 100%;">
 					</div>
 					<div class="interest-description">
 						<p>Enfin, ma passion pour les voyages et la découverte de nouvelles cultures m’intéresse beaucoup. Franco-russe, j'ai eu la chance de visiter la Russie à plusieurs reprises, m’imprégnant de cette culture si différente de la nôtre, dès mon plus jeune âge.
@@ -243,11 +344,11 @@ O<!DOCTYPE html>
         <div class="container">
             <h2 style="text-align: center; font-weight: bold; margin-bottom: 100px;">On arrive déjà à la fin... c'est l'heure de me contacter !</h2>
             <form action="mailto:dimitri.deramond@gmail.com" method="post" enctype="text/plain">
-                <button type="submit">Envoyez moi un mail !</button>
+                <button type="submit">Cliquez pour m'envoyer un mail !</button>
             </form>
 			<div class="contact-info">
 				<div class="contact-info-left">
-					<img src="mail.png" alt="Mail">
+					<img src="images\mail.png" alt="Mail">
 				</div>
 				<div class="contact-info-right">
 					<p>Mail : dimitri.deramond@gmail.com</p>
@@ -255,7 +356,7 @@ O<!DOCTYPE html>
 			</div>
 			<div class="contact-info">
 				<div class="contact-info-left">
-					<img src="tel.png" alt="Téléphone">
+					<img src="images\tel.png" alt="Téléphone">
 				</div>
 				<div class="contact-info-right">
 					<p>Téléphone : 06 75 46 00 69</p>
@@ -263,7 +364,7 @@ O<!DOCTYPE html>
 			</div>
 			<div class="contact-info">
 				<div class="contact-info-left">
-					<img src="linkedin.png" alt="Linkedin">
+					<img src="images\linkedin.png" alt="Linkedin">
 				</div>
 				<div class="contact-info-right">
 					<p>LinkedIn : <a href="https://www.linkedin.com/in/dimitri-deramond/" target="_blank">https://www.linkedin.com/in/dimitri-deramond/</a></p>
@@ -271,10 +372,10 @@ O<!DOCTYPE html>
 			</div>
 			<div class="contact-info">
 				<div class="contact-info-left">
-					<img src="cv.png" alt="CV">
+					<img src="images\cv.png" alt="CV">
 				</div>
 				<div class="contact-info-right">
-					<p>Téléchargez mon CV ! : <a href="DERAMOND_CV.pdf" download>Mon CV</a></p>
+					<p>Téléchargez mon CV ! : <a href="D:\SD 2\Professionnel\DERAMOND_CV.pdf" download>Mon CV</a></p>
 				</div>
 			</div>
         </div>
